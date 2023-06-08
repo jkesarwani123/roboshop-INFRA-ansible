@@ -1,0 +1,7 @@
+- name: Roboshop Project
+  hosts: all
+  become: true
+  vars:
+   role_name: dummy
+  roles:
+    - "{{ role_name }}"

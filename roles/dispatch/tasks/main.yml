@@ -1,0 +1,9 @@
+- name: dummy
+  ansible.builtin.debug:
+    msg: hello component-dispatch
+
+- name: calling golang function
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: golang
+
